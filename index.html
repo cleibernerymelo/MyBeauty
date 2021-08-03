@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts Google Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Style-->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>My Beauty</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-primary-color"
+      id="navbar"
+    >
+      <div class="container py-3">
+        <a class="navbar-brand bg-primary-color" href="#">
+          <img
+            src="https://image.flaticon.com/icons/png/128/1024/1024519.png"
+            alt="My Beauty"
+          />
+          <span>My Beauty</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active primary-color"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link primary-color" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link primary-color" href="#">Tendencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link primary-color" href="#">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Slider-->
+    <div class="container" id="slider-container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://media.istockphoto.com/photos/manicure-picture-id171379163?k=6&m=171379163&s=612x612&w=0&h=ZxjHcZkwrQEhTL7eSubehIszhBZXm4037FLbkp-xSCQ="
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-caption">
+            <h5>Make Up</h5>
+            <a href="#" class="btn btn-dark">Ver</a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/photos/makeup-moody-background-picture-id1134374885?k=6&m=1134374885&s=612x612&w=0&h=uSr6iCdBC5qtUEKErLbr-6hKNJnixNUIBtRTwKWqXug="
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h5>Sobrancelhas</h5>
+              <a href="#" class="btn btn-dark">Ver</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/photos/woman-in-mask-on-face-in-spa-beauty-salon-picture-id921797424?k=6&m=921797424&s=612x612&w=0&h=dsfLznWB3l4227qlh3V2lwnE4EdNXqVcIIbK7LM4-eg="
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h5>Manicure</h5>
+              <a href="#" class="btn btn-dark">Ver</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-chevron-compact-left"></i>
+          <span class="visually-hidden">Previous</span>
+          <!--           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span> -->
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-chevron-compact-right"></i>
+          <span class="visually-hidden">Next</span>
+          <!--           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span> -->
+        </button>
+      </div>
+
+      <!-- Mini Banner -->
+      <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-box primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Loren Ipson One</h5>
+                <p class="card-text secondary-color">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-layers primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Loren Ipson Two</h5>
+                <p class="card-text secondary-color">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-lightning-charge primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Loren Ipson three</h5>
+                <p class="card-text secondary-color">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Destaques -->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Trabalhos em destaques</h2>
+        <p class="subtitle secondary-color">
+          Conheça nossos serviços desafiadores
+        </p>
+        <div class="col-12" id="featured-images">
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/photos/makeup-artist-applying-eyeshadow-on-a-girl-picture-id687244776?k=6&m=687244776&s=612x612&w=0&h=EzX__n-kuSjIFmEYLThI_J5RHvkR5T6MJIxJ0P1ZS4A="
+                alt="Services 1"
+                class="img-fluid"
+              />
+              <div class="banner-content">
+                <p class="secondary-color">Categoria</p>
+                <h3>Nome do Serviço</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/photos/serene-beauty-picture-id1083617440?k=6&m=1083617440&s=612x612&w=0&h=wLq7N87zwUamnN1g1BebCxYdt3BVU8bhEyCSymDFyFI="
+                alt="Services 1"
+                class="img-fluid"
+              />
+              <div class="banner-content">
+                <p class="secondary-color">Categoria</p>
+                <h3>Nome do Serviço</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/photos/wedding-makeup-artist-making-a-make-up-for-bride-picture-id528908438?k=6&m=528908438&s=612x612&w=0&h=28_JwYMmo_ClHkFVCVMsqrC_MQNqPNKWV1r9K_SMrzs="
+                alt="Services 1"
+                class="img-fluid"
+              />
+              <div class="banner-content">
+                <p class="secondary-color">Categoria</p>
+                <h3>Nome do Serviço</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/photos/female-hands-with-white-manicure-and-pedicure-on-pink-and-blue-top-picture-id1173495015?k=6&m=1173495015&s=612x612&w=0&h=0SClGCqGvJ9B7YJfa1GZ5e8aD_rNMwg7X0EPjnJ77lo="
+                alt="Services 1"
+                class="img-fluid"
+              />
+              <div class="banner-content">
+                <p class="secondary-color">Categoria</p>
+                <h3>Nome do Serviço</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/photos/tender-neat-manicure-on-female-hands-on-green-leaves-background-nail-picture-id1004049064?k=6&m=1004049064&s=612x612&w=0&h=3kmOyp-GmhFYFp5lNwoWAt42uekevwBEh-Ygg7Lf3GE="
+                alt="Services 1"
+                class="img-fluid"
+              />
+              <div class="banner-content">
+                <p class="secondary-color">Categoria</p>
+                <h3>Nome do Serviço</h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <img
+                src="https://media.istockphoto.com/photos/beautiful-pink-and-blue-manicure-with-crystals-on-female-hand-closeup-picture-id1004052418?k=6&m=1004052418&s=612x612&w=0&h=WzB8VBYynPEDIMfv61BR9vT8ntXwEJ23JZTFDbi5rZI="
+                alt="Services 1"
+                class="img-fluid"
+              />
+              <div class="banner-content">
+                <p class="secondary-color">Categoria</p>
+                <h3>Nome do Serviço</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Detalhes Importantes</h2>
+        <p class="subtitle secondary-color">
+          Saiba mais sobre a experiência da nossa incrível equipe
+        </p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img
+              src="https://media.istockphoto.com/photos/creative-concept-with-shopping-trolley-with-makeup-on-a-pink-perfume-picture-id1140638196?k=6&m=1140638196&s=612x612&w=0&h=wdAQeVLDFSIJxHy_hhtPKUI3ztDjbFgOk6SIihK3Hzg="
+              alt="Informações da empresa"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title primary-color">
+                  Esses dados fazem a diferença
+                </h2>
+                <p class="subtitle secondary-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  consectetur vel tenetur deserunt nesciunt voluptates pariatur
+                  eius sed necessitatibus explicabo, adipisci reprehenderit
+                  iusto ratione sunt recusandae atque similique omnis itaque!
+                </p>
+              </div>
+              <div class="col12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">1800</h3>
+                    <p class="secondary-color">Make Up</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">10250</h3>
+                    <p class="secondary-color">Unhas de Gel</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">52</h3>
+                    <p class="secondary-color">Clientes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!--Footer Top -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4"><h2>My Beauty</h2></div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Details-->
+          <div class="col-12" id="footer-details"></div>
+          <div class="row">
+            <div class="col-12 col-md-4" id="news-container">
+              <h4>Fique por dentro das novidades</h4>
+              <p class="secondary-color">
+                Inscreva-se para saber em primeira mão
+              </p>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Digite o seu e-mail"
+                  />
+                </div>
+                <button class="btn btn-dark" type="submit">Inscrever</button>
+              </form>
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+              <h4>Formas de contato</h4>
+              <p class="secondary-color">919769012</p>
+              <p class="secondary-color">mybeauty@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-4" id="links-container">
+              <div class="row">
+                <h4>Você pode estar procurando por:</h4>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="secondary-color">Serviços</a></li>
+                    <li><a href="#" class="secondary-color">Projetos</a></li>
+                    <li><a href="#" class="secondary-color">Vendas</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="secondary-color">Contratar</a></li>
+                    <li>
+                      <a href="#" class="secondary-color">Trabalhe Conosco</a>
+                    </li>
+                    <li><a href="#" class="secondary-color">Contato</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">My Beauty &copy; 2021</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">
+                  Melhoramos o seu dia <i class="bi bi-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
